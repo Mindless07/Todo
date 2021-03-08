@@ -13,19 +13,17 @@ function NewNav(props) {
                 <NavItem name='Logo'/>
                 <NavItem name='Features'>
                     <DropDown>
-                        <div>123</div>
-                        <div>123</div>
-                        <div>123</div>
-                        <div>123</div>
+                        <DropwDownItem name="Feature1"/>
+                        <DropwDownItem name="Feature1"/>
+                        <DropwDownItem name="Feature1"/>
                     </DropDown>
                 </NavItem>    
                 <NavItem name='Premium'/>
                 <NavItem name='Homes'>
                     <DropDown>
-                        <div>123</div>
-                        <div>123</div>
-                        <div>123</div>
-                        <div>123</div>
+                        <DropwDownItem name='Home1'/>
+                        <DropwDownItem name='Home1'/>
+                        <DropwDownItem name='Home1'/>
                     </DropDown>
                 
                 </NavItem>
@@ -74,8 +72,8 @@ function NavItem(props) {
 function DropwDownItem(props) {
     
     return(
-        <div>
-
+        <div className={styles.DropwDownItem}>
+            {props.name}
         </div>
     )
     
