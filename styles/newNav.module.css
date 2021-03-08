@@ -35,4 +35,7 @@
     box-shadow: 1px 1px gray;
     min-width: 20vw;
 }
+.dropDownItem{
+    font-size: var(--text-md);
+}
 
