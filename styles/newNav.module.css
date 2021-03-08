@@ -12,17 +12,17 @@
   justify-content: space-around;
 }
 .navItem {
-    background-color: gray;
+    background-color: white;
     position: relative;
     display: flex;
     align-items: center;
-    
     font-size: var(--text-md);
     margin-left: 2vw;
-    vertical-align: middle;
+    
 }
 .navItem:hover {
   filter: brightness(0.9);
+  border-bottom: 1px solid red;
 }
 .dropDown {
     padding: 1vw;
