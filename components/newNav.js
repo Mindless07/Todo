@@ -12,19 +12,22 @@ function NewNav(props) {
             <span style={{display:'inherit'}}>
                 <NavItem name='Logo'/>
                 <NavItem name='Features'>
-                    
-                    <div>Hello</div>
-                    <div>Hello</div>
-                    <div>Hello</div>
-                    
-                </NavItem>
+                    <DropDown>
+                        <div>123</div>
+                        <div>123</div>
+                        <div>123</div>
+                        <div>123</div>
+                    </DropDown>
+                </NavItem>    
                 <NavItem name='Premium'/>
                 <NavItem name='Homes'>
-                    
-                        <div>Hello</div>
-                        <div>Hello</div>
-                        <div>Hello</div>
-                    
+                    <DropDown>
+                        <div>123</div>
+                        <div>123</div>
+                        <div>123</div>
+                        <div>123</div>
+                    </DropDown>
+                
                 </NavItem>
             </span>
             <span style={{display:'inherit'}}>
@@ -56,13 +59,24 @@ function NavItem(props) {
     return (
         <li 
         onMouseEnter={()=>{setOpen(true)}}
-        // onMouseLeave={()=>{setOpen(false)}}
+        onMouseLeave={()=>{setOpen(false)}}
         className={styles.navItem}>
             <Link href='/'>
-                <a>{props.name}</a>
+                <a style={{padding:'1vw'}} className="align-middle">{props.name}</a>
             </Link>
-        {open && props.children ? <div>{props.children}</div>: null}
+            
+         {open && props.children ? props.children : null} 
         </li>
+    )
+    
+}
+
+function DropwDownItem(props) {
+    
+    return(
+        <div>
+
+        </div>
     )
     
 }
